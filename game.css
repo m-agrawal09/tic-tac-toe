@@ -1,0 +1,146 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #90e0ef;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: white;
+}
+
+.institute-info h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.institute-info p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
+
+.game-title {
+    font-size: 2.2rem;
+    margin: 20px 0;
+    color: #222;
+}
+
+.game-container {
+    text-align: center;
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.status {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    transition: font-size 0.3s ease;
+}
+
+.status.win {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 8px;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.playerX {
+    color: blue;
+}
+
+.playerO {
+    color: red;
+}
+
+.reset-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #1e7e34;
+}
+
+.winning-line {
+    position: absolute;
+    height: 4px;
+    background-color: black; /* Simple dark line */
+    transform-origin: 0 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    border-radius: 2px;
+}
+
+/* Developer Section */
+.developers-section {
+    margin-top: 100px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+.developers-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.developers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.developer {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.developer h3 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.developer p {
+    font-size: 0.9rem;
+}
